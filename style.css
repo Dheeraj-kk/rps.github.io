@@ -3,6 +3,9 @@
   padding: 0;
   text-align: center;
 }
+html, body {
+    height: 100%;
+}
 h1 {
   background-color: #081b31;
   color: #fff;
@@ -58,4 +61,59 @@ img {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 1rem;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .choices {
+        gap: 10px;
+    }
+
+    .choice img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .score-board {
+        gap: 20px;
+    }
+
+    .score p {
+        font-size: 1.2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile view: Stack items vertically and adjust the layout */
+@media (max-width: 480px) {
+    .choices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .score p {
+        font-size: 1rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 1.2rem;
+    }
+
+    #msg {
+        font-size: 0.9rem;
+    }
 }
