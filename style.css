@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 html, body {
     height: 100%;
+}
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 h1 {
   background-color: #081b31;
@@ -24,6 +29,7 @@ h1 {
 .choice:hover {
   cursor: pointer;
   background-color: #081b31;
+  transform: scale(1.1);
 }
 img {
   height: 150px;
